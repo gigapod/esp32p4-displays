@@ -135,6 +135,18 @@ menu "Board Support Package(ESP32-P4)"
                 bool "Waveshare 10.1-DSI-TOUCH-B Display"
         endchoice
 
+        config BSP_LCD_TOUCH_MIRROR_X
+            bool "Mirror touch X coordinate"
+            default n
+            help
+                Mirror the X axis of touch coordinates after reading them from the touch controller.
+
+        config BSP_LCD_TOUCH_MIRROR_Y
+            bool "Mirror touch Y coordinate"
+            default n
+            help
+                Mirror the Y axis of touch coordinates after reading them from the touch controller.
+
     endmenu
     
 endmenu
